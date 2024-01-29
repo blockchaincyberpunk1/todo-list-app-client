@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Custom color variables */
+  --color-dark-blue: #1D2B53;
+  --color-bright-red: #FF004D;
+  --color-light-yellow: #FAEF5D;
+
+  /* Foreground and background colors for light mode */
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Foreground and background colors for dark mode */
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Tailwind utility classes for custom colors */
+@layer utilities {
+  .bg-dark-blue {
+    background-color: var(--color-dark-blue);
+  }
+  .text-dark-blue {
+    color: var(--color-dark-blue);
+  }
+  .bg-bright-red {
+    background-color: var(--color-bright-red);
+  }
+  .text-bright-red {
+    color: var(--color-bright-red);
+  }
+  .bg-light-yellow {
+    background-color: var(--color-light-yellow);
+  }
+  .text-light-yellow {
+    color: var(--color-light-yellow);
+  }
+}
