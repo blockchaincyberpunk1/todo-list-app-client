@@ -27,7 +27,7 @@ Todo List App is a simple yet powerful tool to help you manage your daily tasks 
 ![Todo List App Screenshot 1](images/screenshot1.png)
 ![Todo List App Screenshot 2](images/screenshot2.png)
 
-Explore a live demo of the Todo List App [here](https://todolistapp.example.com).
+Explore a live demo of the Todo List App [here](https://immense-castle-11296-affffce4cc46.herokuapp.com/).
 
 
 ## Features
